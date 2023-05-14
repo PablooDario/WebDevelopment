@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <title>DOM</title>
+</head>
+
+<body>
+    <p id="hola">Hola Mundo</p>
+    <h1 id="escuela">ESCOM</h1>
+    <h2 id="carrera">LCD</h2>
+    <div id="divison1">Hola</div>
+    <div id="divison2">Hola</div>
+</body>
+
+<script>
+    let miJson = '{"nombre" : "Escuela Superior de Computo"}'
+    let miObj = JSON.parse(miJson)
+    
+    // getElementById nos da un apuntador de la etiqueta que queramos 
+    let unaEtiqueta = document.getElementById("hola");
+    //cambiamos el contendio de la etiqueta
+    unaEtiqueta.innerText = miObj.nombre
+    // innerText nos da el contenido de la etiqueta 
+    alert(unaEtiqueta.innerText)
+
+    //Sleccionar una etiqueta a traves de DOM y el id
+    document.querySelector("#carrera").innerText = "IIA"
+    let otraEtiqueta = document.querySelector("#carrera")
+    console.log(otraEtiqueta.innerText)
+
+    //Diferencia entre innerHTML e innerText
+    let unDiv =document.querySelector("div#divison1")
+    unDiv.innerHTML = "<H1> Esto es un div <H1>"
+
+    let unDiv2 =document.querySelector("div#divison2")
+    unDiv2.innerText = "<H1> Esto es un div <H1>"
+
+    //acceder a un atributo aunque no este definido en el codigo original
+    unDiv2.style = "color: blue"
+</script>
+
+</html>

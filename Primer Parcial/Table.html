@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!--DOctype se refiere a que estamos usando html version 5-->
+<html>
+    <head>
+        <title>Tablas</title>
+        <meta name ="description" content="Template for html"/>
+    </head>
+    <body>
+        <table border="5" width="100%">
+            <thead>
+                <!--tr es table row-->
+                <tr>
+                    <th width="20%" align="left" colspan="1">Boleta</th>
+                    <th colspan="1">Nombre</th>
+                    <th align="right">Correo</th>
+                </tr>
+
+                <!--width es el ancho que va ocupar la pagina, si le das en % es el porcentaje de la pagina
+                si lo das en numerico, son los pixeles que ocupará-->
+
+                <!--colspan es la cantidad de columnas que ocupará, aunque todo se desacomodará si no lo hacemos
+                correctamente-->
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">206312</td>
+                    <td>Juan Perez</td>
+                    <td>Juan@gmail.com</td>
+                    <!--rowspan es la cantidad de filas que ocupara un elemento-->
+                </tr>
+                <tr>
+                    <td>238321</td>
+                    <td>Diana Lopez</td>
+                    <td>DianaLp@gmail.com</td>
+                </tr>
+                <tr>
+                    <td><img src="../../Documentos Prueba/porsche-model.png" alt="Porshce" width="400" height="250"></td>
+                    <td>Porshce</td>
+                    <td>Porshce@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

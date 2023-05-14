@@ -1,0 +1,18 @@
+[target="_blank"]
+{
+    color: red;
+}
+[target="_self"]
+{
+    color: rgb(94, 4, 49);
+}
+p[align="center"]
+{
+    color: darkslategrey;
+    background-color: bisque;
+    /*Estilo para una etiqueta con un atributo en específico*/
+}
+p:hover
+{
+    font-size: larger;
+}

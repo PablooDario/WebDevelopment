@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<script>
+    let yo={
+        nombre:"Pablo",
+        apellidos:"Juarez",
+        edad:"20 años",
+        altura: 180,
+        getNombreCompleto: function()
+        {
+            return this.nombre+" "+this.apellidos;
+        }
+    };
+    yo.edad="21 años";
+    console.log(yo.edad);
+    console.log(yo.getNombreCompleto())
+
+    let alumno={
+        carrera:'LCD',
+        nombre:{
+            nombrePila:'Pablo',
+            Apellido:'Juarez'
+        },
+        grupos:['1AV1', '2AM1', '2AM1', '4AV1'],
+        estancia:[
+            {semestre:'2022/1', promedio:9.8},
+            {semestre:'2022/2', promedio:9.6},
+            {semestre:'2023/1', promedio:9.65}
+        ]
+    }
+
+    let escuela={
+        nombre:'ESCOM',
+        institucion:'IPN',
+        oferta:[
+            {carrera: 'lcd', materias:['Desarrollo Web', 'Analisis de Datos']},
+            {carrera: 'ISC', materias:['Fisica', 'Compiladores']},
+            {carrera: 'IIA', materias:['Microchips', 'Algoritmos Bioinspirados']}
+        ]
+    }
+    console.log(escuela.oferta[0].carrera)
+    console.log(alumno.grupos)
+    console.log(alumno.estancia[2].promedio)
+</script>
+<body>
+    
+</body>
+</html>
