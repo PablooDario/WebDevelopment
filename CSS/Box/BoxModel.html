@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!--DOctype se refiere a que estamos usando html version 5-->
+<html>
+    <style>
+        div.box{
+            height: 200px;
+            width: 200px;
+            border: black 5px solid;
+            margin: 20px;
+        }
+        html{
+            background-color: rgb(1, 1, 58);
+            color: rgb(15, 95, 165);
+        }
+        a{
+            border: 1px groove rgb(245, 162, 162);
+            margin: 0px;
+            color: rgb(197, 100, 65);
+        }
+        div.l{float: left;}
+        div{
+            border: 2px solid rgb(165, 1, 165);
+            color: rgb(143, 177, 51);
+            padding: 20px;
+            width: 33%;
+            box-sizing: border-box;
+            text-align: justify center;
+            margin: 5px;
+        }
+        .container{width: 90%;}
+        p{margin: 0px;}
+    </style>
+    <head>
+        <title>BoxModel</title>
+        <meta name ="description" content="Template for html"/>
+    </head>
+    <body>
+        <div class="container l">
+            <div class="l">
+                <p>Padding es el espacio entre el interior y su borde</p>
+                <p>Margin es el espacio entre el borde y lo exterior</p>
+
+                <div style="width: 200px; color: rgb(185, 144, 30); padding-bottom: 40px; ;">
+                    <p>Intercambio Nacional</p>
+                    <a href="https://www.escom.ipn.mx/docs/slider/convMovilidadNacional_20241.pdf" target="_blank">Nacional</a>
+                </div>
+            </div>
+        
+            <div class="l">
+            <p>En teoría todas las etiquetas tienen una caja a su alrededor</p>
+            <a href="https://www.escom.ipn.mx/", target="_blank">ESCOM</a>
+            </div>
+            <div class="l">
+                <p>Intercambio Internacional</p>
+                <a href="https://www.escom.ipn.mx/docs/slider/convMovilidadInternacional_20241.pdf"> Internacional</a>
+            </div>
+        </div>
+
+        <div class="container l">
+            <div class="box" style="background-color: darkred;">
+                <img src="https://files.porsche.com/filestore/image/multimedia/none/j1-taycan-tu-modelimage-sideshot/model/a145cead-ac7b-11e9-80c4-005056bbdc38/porsche-model.png" alt="porsche" style="width: 100%; height: 100%;">     
+            </div>
+            
+            <div class="box" style="background-color: rgb(197, 17, 113);">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto quos ullam excepturi suscipit necessitatibus quo unde rerum, quis nobis culpa?</p>
+            </div>
+            
+            <div class="box" style="background-color: cadetblue;">
+
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="Sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<script>
+    //Funciones normales
+    function suma ()
+    {
+        return 5 + 3;
+    }
+
+    function otraSuma (a,b)
+    {
+        return (a+b);
+    };
+
+    console.log("El resultado de suma es " + suma());
+    console.log("El resultado de otra suma es: " + otraSuma(10,2));
+    
+    //Funcion IIFE
+    (function (){
+       console.log ("Mi primera funcion IIFEE")
+    })();
+
+    
+    //Funcion IIFE con parametros
+    ((Numero)=>
+    {
+       console.log("Esta es mi Funcion IIFE numero " + Numero);
+    })(2);
+
+    //Funcion anónima
+    const x = function()
+    {
+        console.log("Mi primera funcion anónima")
+    };
+
+    //Funcion Flecha sin parametros
+    const FuncionF = () =>
+    {
+        console.log("Mi primera funcion flecha")  
+    };
+
+    //Funcion flecha con 1 parametro
+    const FuncionF1 = Nombre =>
+    {
+        console.log("Hola " + Nombre)
+    };
+
+    //Funcion flecha con 2 o mas parametros
+    const FuncionF2 = (Nombre, Apellido) => { return "Tu eres " + Nombre + " " + Apellido};
+
+    //Funcion flecha con solo 1 expresion
+    const FuncionFE1 = (Nombre, Apellido) => "Tu eres " + Nombre + " " + Apellido;
+
+    //Funcion flecha con 2 o mas expresiones
+    const FuncionFE2 = (w, z) => {
+        let sum = w+z
+        return ("La suma pasada fue " + sum);
+    };
+
+    x()
+    FuncionF()
+    FuncionF1("Pablo")
+    console.log(FuncionF2("Pablo", "Juarez"))
+    console.log(FuncionFE1("Pablo", "Juarez"))
+    console.log(FuncionFE2(90, 8))
+    
+</script>
+<body>
+    <p onclick="alert(suma())">Haz click</p>    
+</body>
+</html>
